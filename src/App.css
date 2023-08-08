@@ -1,38 +1,610 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Mulish:wght@400;500;700&family=Playfair+Display:wght@800&family=Roboto:wght@400;500&display=swap');
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  padding: 0%;
+  margin: 0%;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* nav {
+  margin: 0;
+  width: 100%;
+  height: 80px;
+  background-color: white;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  color: white;
+  text-decoration: none;
+}  */
+
+nav{
+width:100%;
+    padding:1rem;
+    display: flex;
+    align-items: center;
+    /* position: sticky;  */
+    background-color: rgb(15, 14, 14);
+    top: 0%;
+    z-index: 10;
+    height: 81px;
+    /* justify-content: center; */
+
+    >main{
+      margin-left:75rem;
+      justify-content: center;
+      font-weight: 100;
+      margin-left: 33rem;
+    margin-top: 14px;
+    }
+
+    >.brand{
+      align-items: center;
+      font-family:"emoji";
+      font-size: 27px;
+      /* justify-content: center; */
+    }
+    
+} 
+
+.brand{
+  
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+a {
+  color:white;
+  text-decoration: none;
+  margin: 10px;
+  font-size: 21px;
+  /* margin-right: 2rem; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+a:hover{
+  color: #5853ff;
+  transition: 0.2s;
+}
+
+.createPostPage {
+  width: 100%;
+  height: calc(100vh - 80px);
+  display: grid;
+  place-items: center;
+}
+
+.cpContainer {
+  width: 500px;
+  height: auto;
+  padding: 20px;
+  background-color: black;
+  border-radius: 12px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.cpContainer h1 {
+  text-align: center;
+}
+
+.cpContainer label {
+  font-size: 25px;
+}
+.cpContainer .inputGp {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputGp input,
+.inputGp textarea {
+  font-size: 18px;
+  border: none;
+  border-radius: 2px;
+  padding: 5px;
+}
+
+.inputGp input {
+  height: 40px;
+}
+.inputGp textarea {
+  height: 150px;
+}
+
+.cpContainer button {
+  margin-top: 20px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+input,
+textarea {
+  margin-top: 5px;
+}
+
+.loginPage {
+  width: 100vw;
+  height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginPage p {
+  font-size: 30px;
+}
+
+/* GOOGLE BUTTOn */
+.login-with-google-btn {
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  padding: 5px 16px 12px 42px;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 1px 1px rgba(0, 0, 0, 0.25);
+  color: #757575;
+  font-size: 25px;
+  font-weight: 500;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNMTcuNiA5LjJsLS4xLTEuOEg5djMuNGg0LjhDMTMuNiAxMiAxMyAxMyAxMiAxMy42djIuMmgzYTguOCA4LjggMCAwIDAgMi42LTYuNnoiIGZpbGw9IiM0Mjg1RjQiIGZpbGwtcnVsZT0ibm9uemVybyIvPjxwYXRoIGQ9Ik05IDE4YzIuNCAwIDQuNS0uOCA2LTIuMmwtMy0yLjJhNS40IDUuNCAwIDAgMS04LTIuOUgxVjEzYTkgOSAwIDAgMCA4IDV6IiBmaWxsPSIjMzRBODUzIiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNNCAxMC43YTUuNCA1LjQgMCAwIDEgMC0zLjRWNUgxYTkgOSAwIDAgMCAwIDhsMy0yLjN6IiBmaWxsPSIjRkJCQzA1IiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNOSAzLjZjMS4zIDAgMi41LjQgMy40IDEuM0wxNSAyLjNBOSA5IDAgMCAwIDEgNWwzIDIuNGE1LjQgNS40IDAgMCAxIDUtMy43eiIgZmlsbD0iI0VBNDMzNSIgZmlsbC1ydWxlPSJub256ZXJvIi8+PHBhdGggZD0iTTAgMGgxOHYxOEgweiIvPjwvZz48L3N2Zz4=);
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: 12px 11px;
+}
+.login-with-google-btn:hover {
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 2px 4px rgba(0, 0, 0, 0.25);
+}
+.login-with-google-btn:active {
+  background-color: #eeeeee;
+}
+.login-with-google-btn:focus {
+  outline: none;
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 2px 4px rgba(0, 0, 0, 0.25),
+    0 0 0 3px #c8dafc;
+}
+.login-with-google-btn:disabled {
+  filter: grayscale(100%);
+  background-color: #ebebeb;
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 1px 1px rgba(0, 0, 0, 0.25);
+  cursor: not-allowed;
+}
+
+/* .homePage {
+  width: 100%;
+  min-height: calc(100vh - 80px);
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  margin-top: 10rem;
+} */
+
+
+
+/* Updated CSS for Card Design */
+/* .homePage .post {
+  width: 600px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+  border-radius: 12px;
+  transition: transform 0.2s ease;
+} */
+
+/* The updated CSS to apply blur effect to the background image */
+/* .homebg { */
+  /* width: 100%; */
+  /* height: 70vh; Increase the height for a better visual effect */
+  /* overflow: hidden; Hide any overflowing content */
+
+   /* .backgroundImage{ */
+    /* width: 100%; */
+    /* height: 100%; */
+    /* filter: blur(0px); Adjust the blur value as needed */
+    /* opacity: 0.7; */
+  /* }  */
+/* } */
+
+/* 
+.homePage .post:hover {
+  transform: translateY(-5px);
+}
+
+.postHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.postHeader .title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.postHeader .deletePost button {
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.postTextContainer {
+  word-wrap: break-word;
+  max-height: 200px;
+  overflow: hidden;
+} */
+
+
+.homePage {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 20rem;
+}
+
+.homebg {
+  width: 100%;
+  height: 70vh; 
+  overflow: hidden; 
+
+   /* .backgroundImage{
+    width: 100%;
+    height: 100%;
+    filter: blur(3px);
+    opacity: 0.7;
+  }  */
+}
+
+.pageTitle {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  background-color: #212121;
+  border-radius: 19px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 40rem;
+  margin-left: 4rem
+}
+
+.articleImage {
+  text-align: center;
+}
+
+.articleImage img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.postContent {
+  margin-top: 20px;
+  color: white;
+}
+
+.postHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.deletePost button {
+  border: none;
+  background: none;
+  font-size: 1rem;
+  cursor: pointer;
+  color: red;
+}
+
+.postTextContainer {
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+.author {
+  font-size: 1rem;
+  margin-top: 10px;
+  color: #888;
+}
+
+/* .heading{
+  color: white; 
+   font-weight:500;
+  margin-right:10rem;
+} */
+
+/* CSS for the animated heading */
+ @keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+}
+
+.animated-heading {
+  animation: fadeInOut 2s infinite;
+}
+ 
+
+
+/* New article section */
+.article-section{
+  margin-top: 4rem;
+    display: flex;
+    margin-right: 2rem;
+    cursor: pointer;
+   
+}
+
+.article-content{
+  padding: 35px;
+  margin-right:5px;
+  width: 30rem;
+  margin-top:-40px;
+  /* justify-content: space-around; */
+  letter-spacing: 0px;
+  /* line-height: 3em; */
+  font-size: 14px;
+  font-weight: 200;
+  font-family: Roboto;
+  /* color: white; */
+  
+}
+
+.article-content h1:hover{
+
+  color: #1c33abe0;
+  transition: 0.4s;
+}
+
+.article-content h1{
+  width: 25rem;
+}
+
+.article-img{
+  width: 400px;
+  height: 300px;
+}
+
+.article-author{
+  font-size: 14px;
+  color: rgb(13, 12, 12);
+  font-weight: 600;
+  
+}
+
+.article-desc{
+  margin-top: 1rem;
+  font-size: 14px;
+  color: rgb(107, 92, 92);
+
+}
+
+.homePage{
+  width: 60rem;
+  margin-right: 36rem;
+  margin-top: -7rem;
+}
+
+/* .read-more-btn:hover{
+
+  background-color:#1c33abe0;
+} */
+
+
+.btn{
+  margin-top: 3rem;
+   height: 30px;
+   background-color: white;
+   color: black;
+   cursor:pointer;
+   border:2px solid #1c33abe0;
+   font-weight: 600;
+}
+
+
+.btn:hover{
+  
+  color:#1c33abe0;
+  transition: 0.45s;
+}
+
+.container{
+  margin-top: -3rem;
+}
+
+.upper-posts-container {
+  display: grid; /* Use CSS grid */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Set the columns and use auto-fit for responsiveness */
+  gap: 20px; /* Add some gap between posts */
+  padding: 10rem;
+  margin-top: -11rem;
+}
+
+.upper-posts {
+  border: 1px solid #ccc;
+}
+
+.upper-article {
+  position: relative;
+}
+
+.upper-img {
+  width: 100%;
+  height: 500px;
+}
+
+.post-heading-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(106 106 106 / 80%);
+  padding: 10px;
+  color: white;
+  width: 100%;
+  text-align: center;
+  opacity: 0.9;
+  /* height: 507px; */
+}
+
+.post-heading-overlay h2 {
+  margin: 0;
+}
+
+h2{
+color: 'black';
+margin-bottom: "-12rem";
+font-weight: 500;
+/* font-family: "Roboto"; *
+/* font-weight: "100"; */
+margin-left: "170px";
+/* margin-top: "6rem"; */
+/* font-family: "Roboto"; */
+margin-top: 16rem;
+margin-left: 169px;
+font-size: "21px";
+}
+
+.burger-icon {
+  display: none; /* Hide by default on larger screens */
+  font-size: 24px;
+  margin-left: 10px;
+  color: white;
+}
+
+
+.post-heading-overlay:hover {
+  background-color: rgba(20, 20, 20, 0.8);
+  transition: 0.4s;
+}
+
+.upper-article:hover .post-heading-overlay {
+  background-color: rgba(30, 26, 26, 0.8);
+  transition: 0.4s;
+}
+
+/* rgba(0, 0, 0, 0.8) */
+
+@media (min-width: 768px) {
+  .homePage {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 10rem;
+  }
+
+  .burger-icon {
+    display: inline-block;
+  }
+
+  .homebg {
+    height: 70vh;
+  }
+
+  .pageTitle {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+
+  .post {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .burger-icon{
+    display: none;
+  }
+
+  .postHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+  }
+
+  .deletePost button {
+    font-size: 1.2rem;
+  }
+
+  .postTextContainer {
+    margin-top: 10px;
+  }
+
+  .article-section {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 4rem;
+  }
+
+  .article-content {
+    width: 70%;
+    margin-top: 0;
+  }
+
+  .article-img {
+    width: 40%;
+    height: auto;
+  }
+
+  .article-author {
+    font-size: 16px;
+  }
+
+  .article-desc {
+    font-size: 16px;
+    margin-top: 1rem;
+  }
+
+  .homePage {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 5rem;
+  }
+
+  .upper-posts-container {
+    padding: 2rem;
+    margin-top: -8rem;
+  }
+
+  .post-heading-overlay {
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+    opacity: 0.9;
+  }
+
+  h2 {
+    font-size: 24px;
+    margin-top: 12rem;
+    margin-left: 0;
   }
 }
