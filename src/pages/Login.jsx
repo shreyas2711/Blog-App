@@ -12,7 +12,7 @@ const Login = ({ setIsAuth }) => {
     // Check if the user is already logged in
     const unsubscribe = auth.onAuthStateChanged((user) => {
       if (user) {
-        const yourUserId =process.env.REACT_APP_AUTHORIZED_USER_ID;
+        const yourUserId ='MGMdMFPFywSuXAp0ra737OyRRU32';
         if (user.uid === yourUserId) {
           // User is authorized
           setIsAuthorized(true);
