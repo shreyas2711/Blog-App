@@ -1,5 +1,5 @@
 import './App.css';
-import {BrowserRouter as Router,Route, Routes,Link, useNavigate} from "react-router-dom";
+import {BrowserRouter as Router,Route, Routes,Link} from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
@@ -11,8 +11,7 @@ import { useState } from 'react';
 import {signOut} from 'firebase/auth'
 import {auth} from './firebase-config'
 import ArticleLandingPage from './pages/ArticleLandingPage';
-import AboutMe from './pages/AboutMe';
-import Navbar from './pages/Navbar';
+
 
 function App() {
 

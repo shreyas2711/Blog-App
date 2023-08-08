@@ -3,15 +3,14 @@ import { getDocs, collection, deleteDoc, doc } from 'firebase/firestore';
 import { db, auth } from '../firebase-config';
 import { Link } from 'react-router-dom';
 import { TypeAnimation } from 'react-type-animation';
-import AboutMe from './AboutMe'
-import { format } from 'date-fns';
+
 
 
 const Home = ({ isAuth }) => {
   const [postList, setPostList] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
-  const [showText, setShowText] = useState([]);
-  const [Desc,setDesc]=useState('');
+  // const [showText, setShowText] = useState([]);
+  // const [Desc,setDesc]=useState('');
   // const [articleData, setArticleData] = useState(null);
 
   useEffect(() => {
@@ -28,20 +27,20 @@ const Home = ({ isAuth }) => {
     getPosts();
   }, []);
 
-  useEffect(() => {
-    // Text to be displayed
-    const text = "Weelcome to My Blog!";
-    let currentIndex = 0;
-    const intervalId = setInterval(() => {
-      if (currentIndex >= text.length) {
-        clearInterval(intervalId);
-      } else {
-        setShowText((prevText) => [...prevText, text[currentIndex]]);
-        currentIndex++;
-      }
-    }, 100); // Adjust the speed of animation by changing the interval time (in milliseconds)
-    return () => clearInterval(intervalId);
-  }, []);
+  // useEffect(() => {
+  //   // Text to be displayed
+  //   const text = "Weelcome to My Blog!";
+  //   let currentIndex = 0;
+  //   const intervalId = setInterval(() => {
+  //     if (currentIndex >= text.length) {
+  //       clearInterval(intervalId);
+  //     } else {
+  //       setShowText((prevText) => [...prevText, text[currentIndex]]);
+  //       currentIndex++;
+  //     }
+  //   }, 100); // Adjust the speed of animation by changing the interval time (in milliseconds)
+  //   return () => clearInterval(intervalId);
+  // }, []);
 
   const handleDeletePost = async (id) => {
     try {
@@ -84,13 +83,13 @@ const Home = ({ isAuth }) => {
   };
 
   
-  const formatDate = (timestamp) => {
-    if (timestamp) {
-      const date = new Date(timestamp.seconds * 1000); // Convert Firestore timestamp to JavaScript Date
-      return format(date, 'MMM dd, yyyy'); // You can adjust the date format as needed
-    }
-    return '';
-  };
+  // const formatDate = (timestamp) => {
+  //   if (timestamp) {
+  //     const date = new Date(timestamp.seconds * 1000); // Convert Firestore timestamp to JavaScript Date
+  //     return format(date, 'MMM dd, yyyy'); // You can adjust the date format as needed
+  //   }
+  //   return '';
+  // };
 
   const selectedPostIds = ['CPq0GUixxMfgEgFAaOUe','Zgwskn5CpbMnTfzbxHLn','vHKO8OSbfyXKPEQ2hHTu'];
   const selectedPosts = postList.filter((post) => selectedPostIds.includes(post.id));
@@ -259,9 +258,9 @@ const Home = ({ isAuth }) => {
                     <h1>{post.title}</h1>
                     <div className="article-author">
                       <span>@{post.author.name}</span>
-                      {post.timestamp?.toDate && (
+                      {/* {post.timestamp?.toDate && (
                         <span>{format(post.timestamp.toDate(), 'MMMM dd, yyyy')}</span>
-                      )}
+                      )} */}
                      
                     </div>
                     <div className="article-desc">
