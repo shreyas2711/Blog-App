@@ -4,7 +4,7 @@ import { signInWithPopup, signOut } from 'firebase/auth';
 import { useNavigate } from 'react-router-dom';
 
 const Login = ({ setIsAuth }) => {
-  console.log('Authorized User ID:', process.env.REACT_APP_AUTHORIZED_USER_ID);
+  
   const navigate = useNavigate();
   const [isAuthorized, setIsAuthorized] = useState(false);
 

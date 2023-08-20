@@ -11,6 +11,7 @@ import { useState } from 'react';
 import {signOut} from 'firebase/auth'
 import {auth} from './firebase-config'
 import ArticleLandingPage from './pages/ArticleLandingPage';
+import Navbar from './pages/Navbar';
 
 
 function App() {
@@ -27,8 +28,9 @@ function App() {
   }
 
   return (
+    
     <Router>
-      <nav>
+      {/* <nav>
       <h1 className='brand'>Geeksphere</h1>
       <main>
         <Link to="/">Home</Link>
@@ -43,8 +45,33 @@ function App() {
       <FontAwesomeIcon icon={faBars} />
     </Link>
           </main>
+        </nav> */}
+
+        {/* New */}
+
+        <nav className='navbar'>
+          <div className="brand-title">Geeksphere</div>
+          <a href="" className='toggle-button'>
+            <span className='bar'></span>
+            <span className='bar'></span>
+            <span className='bar'></span>
+          </a>
+          <div className="navbar-links">
+            <ul>
+            <Link to="/">Home</Link>
+        {!isAuth ? (<Link to="/login">Login</Link>
+        ): (  
+          <>
+          <Link to="/createpost">Create Post</Link>
+          <button onClick={SignUserOut}>Log Out</button>
+          </>
+          )}
+            </ul>
+          </div>
         </nav>
         {/* <Navbar/> */}
+
+      {/* <Navbar/> */}
         
       <Routes>
         <Route path="/" element={<Home isAuth={isAuth}/>}/>
