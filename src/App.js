@@ -1,7 +1,6 @@
 import './App.css';
 import {BrowserRouter as Router,Route, Routes,Link} from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+
 
 
 import Home from "./pages/Home";
@@ -11,7 +10,7 @@ import { useState } from 'react';
 import {signOut} from 'firebase/auth'
 import {auth} from './firebase-config'
 import ArticleLandingPage from './pages/ArticleLandingPage';
-import Navbar from './pages/Navbar';
+
 
 
 function App() {
@@ -51,11 +50,11 @@ function App() {
 
         <nav className='navbar'>
           <div className="brand-title">Geeksphere</div>
-          <a href="" className='toggle-button'>
+          {/* <a href="#" className='toggle-button'>
             <span className='bar'></span>
             <span className='bar'></span>
             <span className='bar'></span>
-          </a>
+          </a> */}
           <div className="navbar-links">
             <ul>
             <Link to="/">Home</Link>
