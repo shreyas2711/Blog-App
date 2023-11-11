@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { getDocs, collection, deleteDoc, doc } from 'firebase/firestore';
 import { db, auth } from '../firebase-config';
 import { Link } from 'react-router-dom';
-import { TypeAnimation } from 'react-type-animation';
 
 
 
