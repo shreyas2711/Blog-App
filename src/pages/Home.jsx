@@ -155,7 +155,7 @@ const Home = ({ isAuth }) => {
 
 
     
-    <div>
+    <div className='starting'>
 
     
       {/* Top portion with a different background image */}

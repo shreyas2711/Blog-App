@@ -48,7 +48,7 @@ function App() {
 
         {/* New */}
 
-        <nav className='navbar'>
+        {/* <nav className='navbar'>
           <div className="brand-title">Geeksphere</div>
           <div className="navbar-links">
             <ul>
@@ -62,7 +62,35 @@ function App() {
           )}
             </ul>
           </div>
-        </nav>
+        </nav> */}
+
+        {/* NEW NAVBAR ADDED HERE ON 11 NOV 2023 */}
+        <nav className='navbar'>
+  <div className="brand">Geeksphere</div>
+
+  <ul className='nav-links'>
+    <input type="checkbox" id='checkbox_toggle' />
+    <label htmlFor="checkbox_toggle" className='hamburger'>&#9776;</label>
+
+    {/* NAVIGATION MENUS */}
+    <div className="menu">
+      <Link to="/">Home</Link>
+      {!isAuth ? (
+        <>
+          <Link to="/login">Login</Link>
+        </>  
+      ) : (  
+        <>
+          <Link to="/createpost">Create Post</Link>
+          <button className='Logout' onClick={SignUserOut}>Log Out</button>
+        </>
+      )}
+      <Link to="/about">About</Link>
+      {/* Close the div after all menu items */}
+    </div>
+  </ul>
+</nav>
+
         {/* <Navbar/> */}
 
       {/* <Navbar/> */}
