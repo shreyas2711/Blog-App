@@ -63,7 +63,7 @@ a {
 }
 
 a:hover{
-  color: #5853ff;
+  color: #d9d2d2;
   transition: 0.2s;
 }
 
@@ -173,6 +173,15 @@ textarea {
   background-color: #ebebeb;
   box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 1px 1px rgba(0, 0, 0, 0.25);
   cursor: not-allowed;
+}
+
+.Logout{
+  height: 25px;
+  margin-top: 10px;
+}
+
+.Logout:hover{
+  cursor: pointer;
 }
 
 /* .homePage {
@@ -619,21 +628,22 @@ font-size: "21px";
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
+  background-color: #2538b4;
   color: white;
-  height: 52px;
+  height: 81px;
 }
 
 .brand-title{
   font-size: 1.5rem;
   margin: 0.5rem;
-  margin-top: 1rem;
+  margin-top: 6px;
 }
 
 .navbar-links ul{
   margin: 0;
   padding: 0;
   display: flex;
+  margin-right: 42rem;
 }
 
 .navbar-links li{

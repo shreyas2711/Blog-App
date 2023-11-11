@@ -50,11 +50,6 @@ function App() {
 
         <nav className='navbar'>
           <div className="brand-title">Geeksphere</div>
-          {/* <a href="#" className='toggle-button'>
-            <span className='bar'></span>
-            <span className='bar'></span>
-            <span className='bar'></span>
-          </a> */}
           <div className="navbar-links">
             <ul>
             <Link to="/">Home</Link>
@@ -62,7 +57,7 @@ function App() {
         ): (  
           <>
           <Link to="/createpost">Create Post</Link>
-          <button onClick={SignUserOut}>Log Out</button>
+          <button className= 'Logout' onClick={SignUserOut}>Log Out</button>
           </>
           )}
             </ul>

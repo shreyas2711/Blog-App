@@ -160,7 +160,7 @@ const Home = ({ isAuth }) => {
 
     
       {/* Top portion with a different background image */}
-      <div className='top-portion'
+      {/* <div className='top-portion'
   style={{
     background: `url('https://t3.ftcdn.net/jpg/03/95/37/18/360_F_395371896_s1iRJw4cDzYvMC5750sYzcyxpVvl97Lr.jpg')`,
     backgroundSize: '100% 100%',
@@ -170,10 +170,10 @@ const Home = ({ isAuth }) => {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-  }}
->
+  }} */}
+{/* > */}
         {/* <h1 style={{ color: 'white', fontSize: '60px', fontFamily: "cursive", fontWeight: "500" }}>{showText.join('')}</h1> */}
-        <TypeAnimation
+        {/* <TypeAnimation
       sequence={[
         // Same substring at the start will only be typed out once, initially
         'Welcome to my Blog!',
@@ -187,7 +187,10 @@ const Home = ({ isAuth }) => {
       style={{ fontSize: '60px', display: 'inline-block',color:"white",fontFamily: "cursive",fontWeight: "500",marginLeft:"50px" }}
       repeat={Infinity}
     />
-      </div>
+      </div> */}
+      
+
+      {/* <div className='top-portion' style={{backgroundColor:"green",height:"12rem"}}>HELLO</div> */}
 
       
 

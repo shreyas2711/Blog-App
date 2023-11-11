@@ -18,6 +18,7 @@ const ArticleLandingPage = () => {
         const articleSnapshot = await getDoc(articleDocRef);
         if (articleSnapshot.exists()) {
           setArticleData(articleSnapshot.data());
+          console.log(articleSnapshot);
         } else {
           console.error('Article not found.');
         }
