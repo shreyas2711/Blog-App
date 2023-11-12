@@ -791,8 +791,10 @@ input[type=checkbox] {
 
 @media (max-width: 768px) {
 
-
-  
+    html,body{
+      overflow-x: hidden;
+    }
+ 
   .navbar{
     height: 105px;
   }
@@ -849,12 +851,16 @@ input[type=checkbox] {
 
   }
 
+  .article-content h1{
+    width: 14rem;
+  }
+
   .article-author{
     font-size: 12px;
 
   }
   .horizontal{
-    width: 44rem;
+    width: 35rem;
   }
 
   
