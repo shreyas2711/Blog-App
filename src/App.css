@@ -867,6 +867,10 @@ input[type=checkbox] {
     margin-left: 0rem;
   }
 
+  .article-desc{
+    width: 200px;
+    text-align: justify;
+  }
   
 }
 

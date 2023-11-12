@@ -267,7 +267,7 @@ const Home = ({ isAuth }) => {
                     </div>
                     <div className="article-desc">
                         {/* Display only a limited number of words from the article text */}
-                        <span>{truncateText(post.postText, 25)}</span>
+                        <span>{truncateText(post.postText, 7)}</span>
                       </div>
                     <div className="read-more">
                       {/* <Link to={`/article/${post.id}`}> */}

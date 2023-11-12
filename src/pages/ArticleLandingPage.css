@@ -76,8 +76,9 @@ body{
   }
 
   .blog-article{
-    width: 456px;
+    width: 355px;
     font-size: 12px;
+    text-align: justify;
   }
 
   .blog-img{
