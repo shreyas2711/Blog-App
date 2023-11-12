@@ -868,8 +868,11 @@ input[type=checkbox] {
   }
 
   .article-desc{
-    width: 200px;
+    width: 173px;
     text-align: justify;
+  }
+  .container{
+    margin-bottom: -8rem;
   }
   
 }
