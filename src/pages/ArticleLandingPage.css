@@ -61,3 +61,26 @@ body{
 }
 
 
+
+@media (max-width:768px) {
+
+  .blog-container{
+    margin-left: -14rem;
+  }
+
+  .blog-heading{
+    
+    width: 39rem;
+
+  }
+
+  .blog-article{
+    width: 610px;
+  }
+
+  .blog-img{
+    margin-left: 4rem;
+  }
+}
+
+
