@@ -796,7 +796,7 @@ input[type=checkbox] {
     }
  
   .navbar{
-    height: 105px;
+    height: 53px;
   }
   .menu {
     display: none;
@@ -840,8 +840,8 @@ input[type=checkbox] {
   }
 
   .article-img{
-    width: 149px;
-    height: 134px;
+    width: 152px;
+    height: 147px;
     margin-top: 10px;
   }
 
@@ -860,7 +860,11 @@ input[type=checkbox] {
 
   }
   .horizontal{
-    width: 35rem;
+    width: 26rem;
+  }
+
+  .horizontal-area{
+    margin-left: 0rem;
   }
 
   
