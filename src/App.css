@@ -791,10 +791,8 @@ input[type=checkbox] {
 
 @media (max-width: 768px) {
 
-  html, body {
-    overflow-x: hidden;
-    }
 
+  
   .navbar{
     height: 105px;
   }
