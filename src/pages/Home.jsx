@@ -252,7 +252,7 @@ const Home = ({ isAuth }) => {
               {/* <Link to={`/article/${post.id}`}> */}
               <Link to={`/article/${post.id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
                 <div className="article-section" key={post.id}>
-                  <div>
+                  <div className='article-img'>
                     <img className='article-img' src={post.articleImage} alt="" />
                   </div>
                   

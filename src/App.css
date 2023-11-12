@@ -584,10 +584,7 @@ font-size: "21px";
     margin-top: 0;
   }
 
-  .article-img {
-    width: 40%;
-    height: auto;
-  }
+ 
 
   .article-author {
     font-size: 16px;
@@ -834,6 +831,21 @@ input[type=checkbox] {
   .starting{
 
     margin-top: 28rem;
+  }
+
+  .article-img{
+    width: 214px;
+    height: 225px;
+  }
+
+  .article-content{
+    font-size: 10px;
+    margin-top: -47px;
+
+  }
+
+  .horizontal{
+    width: 44rem;
   }
 
   

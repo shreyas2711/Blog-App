@@ -70,12 +70,14 @@ body{
 
   .blog-heading{
     
-    width: 39rem;
+    width: 34rem;
+    font-size: 12px;
 
   }
 
   .blog-article{
     width: 610px;
+    font-size: 12px;
   }
 
   .blog-img{
