@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { getDocs, collection, deleteDoc, doc } from 'firebase/firestore';
 import { db, auth } from '../firebase-config';
 import { Link } from 'react-router-dom';
-
+import { TypeAnimation } from 'react-type-animation';
 
 
 const Home = ({ isAuth }) => {
@@ -156,6 +156,39 @@ const Home = ({ isAuth }) => {
 
     
     <div className='starting'>
+
+
+<div className="top" style={{
+        background: `url('https://i.stack.imgur.com/pMAiU.jpg')`,
+        backgroundSize: '100% 100%',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center', // Adjust the position as needed
+        height: '500px',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+      }}>
+        <TypeAnimation
+          sequence={[
+            'Welcome to my Blog!',
+            1000,
+            '',
+            1000,
+          ]}
+          wrapper="span"
+          speed={10}
+          style={{
+            fontSize: '60px',
+            display: 'inline-block',
+            color: "white",
+            fontFamily: "cursive",
+            fontWeight: "500",
+            marginLeft: "50px"
+          }}
+          repeat={Infinity}
+        />
+      </div>
+      
 
     
       {/* Top portion with a different background image */}
