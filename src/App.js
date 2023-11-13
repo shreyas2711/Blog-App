@@ -10,6 +10,7 @@ import { useState } from 'react';
 import {signOut} from 'firebase/auth'
 import {auth} from './firebase-config'
 import ArticleLandingPage from './pages/ArticleLandingPage';
+import Footer from './Footer';
 
 
 
@@ -103,6 +104,7 @@ function App() {
         {/* <Route path="/articlelandingpage" element={<ArticleLandingPage/>} /> */}
         {/* <Route path="/aboutme" element={<AboutMe/>} /> */}
       </Routes>
+      <Footer/>
     </Router>
    
   );

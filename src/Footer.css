@@ -1,0 +1,51 @@
+/* Regular styling for larger screens */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 80px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-social a {
+    color: #fff;
+    margin-right: 15px;
+    text-decoration: none;
+    font-size: 24px;
+  }
+
+  .footer-social a:hover i.fa-twitter {
+    color: #55acee; /* Twitter blue */
+    transition: 0.3s;
+  }
+  
+  .footer-social a:hover i.fa-facebook {
+    color: #3b5998; /* Facebook blue */
+    transition: 0.3s;
+  }
+  
+  .footer-social a:hover i.fa-instagram {
+    color: #e4405f; /* Instagram pink */
+    transition: 0.3s;
+  }
+  
+  /* Media query for smaller screens (e.g., mobile devices) */
+  @media only screen and (max-width: 768px) {
+    .footer-content {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      text-align: center; /* Center text on smaller screens */
+    }
+
+    .footer{
+        margin-top: 16rem;
+    }
+  
+    .footer-social {
+      margin-top: 10px; /* Add space between social icons and other content */
+    }
+  }
+  
