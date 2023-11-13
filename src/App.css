@@ -808,8 +808,9 @@ input[type=checkbox] {
     }
 
     .top {
-      height: auto;
+      height: 400px;
       margin-top: -40rem;
+
     }
  
   .navbar{
@@ -905,6 +906,7 @@ input[type=checkbox] {
   .homePage{
     margin-top: 10rem;
   }
+  
   
 }
 
