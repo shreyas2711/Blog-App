@@ -234,7 +234,7 @@ const Home = ({ isAuth }) => {
       
         <div className="homePage">
         <div className="heading-area">
-        <h1 style={{ color: 'black',marginBottom:"-13rem",fontFamily:"Roboto",fontSize:"23px",fontWeight:"500" ,marginLeft:"2px" }}>LATEST ARTICLES</h1>
+        <h1 style={{ color: 'black',marginBottom:"-13rem",fontFamily:"fangsong",fontSize:"23px",fontWeight:"500" ,marginLeft:"2px" }}>LATEST ARTICLES</h1>
           <hr className='horizontal'/> {/* Add the horizontal line */}
 
 

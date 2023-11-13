@@ -377,13 +377,14 @@ textarea {
   padding: 35px;
   margin-right:5px;
   width: 30rem;
-  margin-top:-40px;
+  margin-top:-50px;
   /* justify-content: space-around; */
   letter-spacing: 0px;
   /* line-height: 3em; */
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 200;
-  font-family: Roboto;
+  font-family: revert;
+  margin-left: 0rem;
   /* color: white; */
   
 }
@@ -396,11 +397,12 @@ textarea {
 
 .article-content h1{
   width: 25rem;
+  line-height: 32px;
 }
 
 .article-img{
-  width: 400px;
-  height: 300px;
+  width: 303px;
+  height: 249px;
 }
 
 .article-author{
@@ -848,11 +850,14 @@ input[type=checkbox] {
   .article-content{
     font-size: 9px;
     margin-top: -32px;
+    margin-left: -1rem;
 
   }
 
   .article-content h1{
     width: 14rem;
+    line-height: 18px;
+    font-size: 14px;
   }
 
   .article-author{
@@ -860,7 +865,7 @@ input[type=checkbox] {
 
   }
   .horizontal{
-    width: 26rem;
+    width: 24rem;
   }
 
   .horizontal-area{
@@ -873,6 +878,13 @@ input[type=checkbox] {
   }
   .container{
     margin-bottom: -8rem;
+  }
+
+  .heading-area{
+    margin-left: -9px;
+  }
+  .btn{
+    margin-top: 1rem;
   }
   
 }
