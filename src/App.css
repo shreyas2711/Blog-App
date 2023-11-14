@@ -736,9 +736,9 @@ font-size: "21px";
   align-items: center;
   justify-content: space-between;
   padding: 16px;
-  background-color: teal;
+  background-color: #112641;
   color: #fff;
-  height: 50px;
+  height: 66px;
   position: fixed;
   top: 0;
   width: 100%;
@@ -779,7 +779,10 @@ font-size: "21px";
 
 .brand {
   color: white;
-  font-size: 32px;
+  font-size: 27px;
+  font-family: monospace;
+ 
+
 }
 
 input[type=checkbox] {
@@ -836,18 +839,27 @@ input[type=checkbox] {
     }
  
   .navbar{
-    height: 53px;
+    height: 60px;
   }
   .menu {
     display: none;
     position: absolute;
-    background-color: teal;
+    background-color: #112641;
     right: 0;
     left: 0;
     text-align: center;
-    padding: 16px 0;
+    padding: 32px 0;
   }
 
+  .menu a{
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+  }
+
+  .brand{
+    margin-left: 96px;
+  }
   .menu li:hover {
     display: inline-block;
     background-color: #4c9e9e;
