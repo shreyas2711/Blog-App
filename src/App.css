@@ -437,16 +437,23 @@ textarea {
    background-color: white;
    color: black;
    cursor:pointer;
-   border:2px solid #1c33abe0;
+   border:2px solid #112641;
    font-weight: 600;
+   border-radius: 4px;
 }
 
+/* .btn:hover{
+  background-color:#153052;
+  color: white;
+  transition: 0.3s;
+}
+/*  */
 
 .btn:hover{
   
   color:#1c33abe0;
   transition: 0.45s;
-}
+} 
 
 .container{
   margin-top: -3rem;
@@ -858,7 +865,7 @@ input[type=checkbox] {
   }
 
   .brand{
-    margin-left: 96px;
+    margin-left: 110px;
   }
   .menu li:hover {
     display: inline-block;
@@ -877,7 +884,7 @@ input[type=checkbox] {
 
   .hamburger {
     display: block;
-    margin-right: 17px
+    margin-right: 6px
   }
   .upper-posts-container{
     display: none;
