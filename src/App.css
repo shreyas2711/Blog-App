@@ -865,7 +865,7 @@ input[type=checkbox] {
   }
 
   .brand{
-    margin-left: 110px;
+    margin-left: 113px;
   }
   .menu li:hover {
     display: inline-block;
@@ -884,7 +884,7 @@ input[type=checkbox] {
 
   .hamburger {
     display: block;
-    margin-right: 6px
+    margin-right: 4px
   }
   .upper-posts-container{
     display: none;
@@ -915,6 +915,7 @@ input[type=checkbox] {
     width: 14rem;
     line-height: 18px;
     font-size: 14px;
+    margin-top: 18px;
   }
 
   .article-author{
@@ -942,6 +943,7 @@ input[type=checkbox] {
   }
   .btn{
     margin-top: 1rem;
+    border: 1px solid #183d6e;
   }
 
   .homePage{
