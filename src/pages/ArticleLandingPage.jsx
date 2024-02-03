@@ -56,7 +56,11 @@ const ArticleLandingPage = () => {
       <div className="blog-heading">
         <h1>{articleData.title}</h1>
         <span>{articleData.author.name}</span>
+    
       </div>
+      <div className="date" style={{marginLeft:'15rem',marginTop:'1rem',fontSize:'13px',color:'grey'}}>
+      <span>{articleData.articleDate}</span>
+      </div> 
 
       <div className="blog-article">
         <p>{firstPart}</p>

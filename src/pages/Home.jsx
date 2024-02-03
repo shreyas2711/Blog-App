@@ -242,6 +242,7 @@ const Home = ({ isAuth }) => {
               <div className="post-heading-overlay">
                 <h2 className='heading-overlay'>{post.title}</h2>
               </div>
+             
             </div>
           </div>
         </Link>
@@ -302,12 +303,16 @@ const Home = ({ isAuth }) => {
                         {/* Display only a limited number of words from the article text */}
                         <span>{truncateText(post.postText, 7)}</span>
                       </div>
+                      <div className="date" style={{marginTop:'1rem',color:'grey'}}>
+                <span>{post.articleDate}</span>
+              </div>
                     <div className="read-more">
                       {/* <Link to={`/article/${post.id}`}> */}
                         <button className='btn'>Read more..</button>
                       {/* </Link> */}
                     
                     </div>
+                    
                     {renderDeleteButton(post)}
                   </div>
                 </div>

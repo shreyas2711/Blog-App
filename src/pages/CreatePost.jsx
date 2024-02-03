@@ -7,6 +7,7 @@ const Createpost = ({ isAuth }) => {
   const [title, setTitle] = useState('');
   const [postText, setPostText] = useState('');
   const [articleImage, setArticleImage] = useState(''); // New state for article image URL
+  const [articleDate, setArticleDate] = useState(''); // New state for article image URL
 
   const postsCollectionRef = collection(db, 'posts');
   const navigate = useNavigate();
@@ -17,6 +18,7 @@ const Createpost = ({ isAuth }) => {
       postText,
       articleImage, // Add the article image URL to the Firestore document
       author: { name: auth.currentUser.displayName, id: auth.currentUser.uid },
+      articleDate
     });
 
     navigate('/');
@@ -52,6 +54,13 @@ const Createpost = ({ isAuth }) => {
           <input
             placeholder="Image URL..."
             onChange={(event) => setArticleImage(event.target.value)}
+          />
+        </div>
+        <div className="inputGp">
+          <label>Date:</label> {/* New input for article image URL */}
+          <input
+            placeholder="Date..."
+            onChange={(event) => setArticleDate(event.target.value)}
           />
         </div>
         <button onClick={createPost}>Submit Post</button>
