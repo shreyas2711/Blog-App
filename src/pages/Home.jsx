@@ -90,7 +90,7 @@ const Home = ({ isAuth }) => {
   //   return '';
   // };
 
-  const selectedPostIds = ['CPq0GUixxMfgEgFAaOUe','Zgwskn5CpbMnTfzbxHLn','vHKO8OSbfyXKPEQ2hHTu'];
+  const selectedPostIds = ['uEUxLJo6imqqsL1nugDU','jJ8hORRSLhtBAUdpwBVn','PbADSrCg6MqtfDdbWy1O'];
   const selectedPosts = postList.filter((post) => selectedPostIds.includes(post.id));
 
 
