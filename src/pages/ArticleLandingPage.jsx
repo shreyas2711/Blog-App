@@ -4,6 +4,7 @@ import { getDoc, doc } from 'firebase/firestore';
 import { db } from '../firebase-config';
 
 import './ArticleLandingPage.css'
+import Footer from '../Footer';
 
 const ArticleLandingPage = () => {
   const { id } = useParams();
@@ -46,12 +47,15 @@ const ArticleLandingPage = () => {
   }
 
   return (
+   
     // <div style={styles.container}>
     //   <h1 style={styles.title}>{articleData.title}</h1>
     //   <div style={styles.postText}>{articleData.postText}</div>
     //   <h3 style={styles.author}>@{articleData.author.name}</h3>
     // </div>
     // <>
+
+    <>
     <div className="blog-container">
       <div className="blog-heading">
         <h1>{articleData.title}</h1>
@@ -68,7 +72,8 @@ const ArticleLandingPage = () => {
         <p>{secondPart}</p>
       </div>
     </div>
-    // </>
+    <Footer/>
+   </>
   );
 };
 

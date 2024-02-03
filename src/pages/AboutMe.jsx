@@ -1,5 +1,8 @@
+import Footer from "../Footer";
+
 const AboutMe = () => {
     return (
+      <>
       <div className="about-me">
         <h2>About Me</h2>
         <img src="path-to-your-image" alt="Profile" />
@@ -10,7 +13,10 @@ const AboutMe = () => {
           <a href="your-social-link">Instagram</a>
           {/* Add more social handles as needed */}
         </div>
+        <Footer/>
       </div>
+      
+      </>
     );
   };
 

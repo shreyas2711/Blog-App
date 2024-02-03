@@ -3,6 +3,7 @@ import { getDocs, collection, deleteDoc, doc } from 'firebase/firestore';
 import { db, auth } from '../firebase-config';
 import { Link } from 'react-router-dom';
 import { TypeAnimation } from 'react-type-animation';
+import Footer from '../Footer';
 
 
 const Home = ({ isAuth }) => {
@@ -95,6 +96,7 @@ const Home = ({ isAuth }) => {
 
 
   return (
+ 
     // <>
     // <div>
     //   {/* Top portion with a different background image */}
@@ -153,7 +155,7 @@ const Home = ({ isAuth }) => {
     // </div>
 
 
-
+<>
     
     <div className='starting'>
 
@@ -329,7 +331,8 @@ const Home = ({ isAuth }) => {
     </div>
 
               
-    
+    <Footer/>
+    </>
 
    
 

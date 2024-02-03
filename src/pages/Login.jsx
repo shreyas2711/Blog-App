@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { auth, provider } from '../firebase-config';
 import { signInWithPopup, signOut } from 'firebase/auth';
 import { useNavigate } from 'react-router-dom';
+import Footer from '../Footer';
 
 const Login = ({ setIsAuth }) => {
   
@@ -51,6 +52,7 @@ const Login = ({ setIsAuth }) => {
   };
 
   return (
+    <>
     <div className="loginPage">
       {isAuthorized ? (
         <p>Already Authorized</p>
@@ -63,6 +65,8 @@ const Login = ({ setIsAuth }) => {
         </div>
       )}
     </div>
+    <Footer/>
+    </>
   );
 };
 
